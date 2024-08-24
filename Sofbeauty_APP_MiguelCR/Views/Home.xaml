@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sofbeauty_APP_MiguelCR.Views.Home"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
+             BackgroundImageSource="img01"
+             Title="Home">
+    <VerticalStackLayout Padding="20,50,20,0" VerticalOptions="StartAndExpand" >
+
+        <Image x:Name="SofBeauty" Source="sofbeauty01" HeightRequest="250"/>
+
+        <Button x:Name="Catalog" Text="CATALOG" BackgroundColor="HotPink" Margin="0,30,0,0" Clicked="Catalog_Clicked" />
+        
+        <Button x:Name="Product" Text="PRODUCTS" BackgroundColor="HotPink" Margin="0,30,0,0" Clicked="Product_Clicked"/>
+
+        <Button x:Name="Customer" Text="CUSTOMERS" BackgroundColor="HotPink" Margin="0,30,0,0" Clicked="Customer_Clicked" />
+       
+
+    </VerticalStackLayout>
+</ContentPage>

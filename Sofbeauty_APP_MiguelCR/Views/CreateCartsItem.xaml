@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sofbeauty_APP_MiguelCR.Views.CreateCartsItem"
+             BackgroundImageSource="img01"
+             NavigationPage.IconColor="Pink"
+             Title="CreateCartsItem">
+    <VerticalStackLayout Padding="20">
+
+        <Image x:Name="Cartsof" Source="cartsof" HeightRequest="70"/>
+
+        <Picker x:Name="LstCarts" Title="Select Cart" TitleColor="DarkOrchid" ItemDisplayBinding="{Binding CustomerId}"  />
+
+        <Picker x:Name="LstProducts" Title="Select Product" TitleColor="DarkOrchid" ItemDisplayBinding="{Binding ProductsName}"  />
+
+        <Entry x:Name="TxtQuantity" Placeholder="Quantity" PlaceholderColor="Fuchsia" Keyboard="Numeric"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+
+                <Button x:Name="BtnAddCartsItem" Text="Add Item" Clicked="BtnAddCartsItem_Clicked" BackgroundColor="DeepPink" TextColor="WhiteSmoke" FontAttributes="Bold" CornerRadius="15" WidthRequest="160" Margin="0,0,10,0" /> 
+
+                <Button x:Name="BtnCancel" Text="Cancel" Clicked="BtnCancel_Clicked" BackgroundColor="Salmon" TextColor="WhiteSmoke" CornerRadius="15" WidthRequest="160" Margin="10,0,0,0" />
+
+            </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

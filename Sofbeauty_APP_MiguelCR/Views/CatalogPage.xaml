@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sofbeauty_APP_MiguelCR.Views.CatalogPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
+             BackgroundImageSource="img01"
+             >
+    <VerticalStackLayout Padding="20,50,20,0" VerticalOptions="StartAndExpand">
+
+        <Image x:Name="SofBeauty" Source="sofbeauty01" HeightRequest="250"/>
+
+        <Button x:Name="BtnCartsItem" Text="SHOPPING CART" Clicked="BtnCartsItem_Clicked" BackgroundColor="HotPink" Margin="0,30,0,0"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+
+            <Button x:Name="BtnCancel" Text="GoBack" Clicked="BtnCancel_Clicked" BackgroundColor="Salmon" TextColor="WhiteSmoke" CornerRadius="15" WidthRequest="160" Margin="10,0,0,0"/>
+
+        </StackLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>

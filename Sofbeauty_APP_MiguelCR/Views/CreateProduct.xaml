@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sofbeauty_APP_MiguelCR.Views.CreateProduct"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
+             BackgroundImageSource="img01"
+             Title="CreateProduct">
+    <VerticalStackLayout Padding="20" >
+
+        <Entry x:Name="TxtProductsName" Placeholder="Nombre del Producto" PlaceholderColor="Fuchsia" Keyboard="Text"/>
+
+        <Entry x:Name="TxtDescription" Placeholder="Descripción" PlaceholderColor="Fuchsia" Keyboard="Text"/>
+
+        <Entry x:Name="TxtType" Placeholder="Tipo" PlaceholderColor="Fuchsia" Keyboard="Text"/>
+
+        <Entry x:Name="TxtPrice" Placeholder="Precio" PlaceholderColor="Fuchsia" Keyboard="Numeric"/>
+
+        <Entry x:Name="TxtImg" Placeholder="Imagen" PlaceholderColor="Fuchsia" Keyboard="Plain"/>
+
+        <Entry x:Name="TxtStock" Placeholder="Cantidad del Producto" PlaceholderColor="Fuchsia" Keyboard="Numeric"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+
+            <Button x:Name="BtnAdd" Text="Add Product" Clicked="BtnAddProduct_Clicked" BackgroundColor="DeepPink" TextColor="WhiteSmoke" FontAttributes="Bold" CornerRadius="15" WidthRequest="160" Margin="0,0,10,0"  />
+
+            <Button x:Name="BtnCancel" Text="Cancel" Clicked="BtnCancelProduct_Clicked" BackgroundColor="Salmon" TextColor="WhiteSmoke" CornerRadius="15" WidthRequest="160" Margin="10,0,0,0" />
+            
+        </StackLayout>
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
